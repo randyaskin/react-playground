@@ -1,14 +1,29 @@
 import React, { Component } from 'react';
+import logo from './logo.svg';
 import './App.css';
 
 function App(props) {
-  return <span>Progress:<ProgressBar /></span>;
+  return (
+    <div>
+      <Header />
+      <ProgressBar progress="40" />
+    </div>
+  );
+}
+
+function Header() {
+  return (
+    <div className="header">
+      <img className="headerLogo" src={logo} alt="logo" />
+      <header className="title">My React App</header>
+    </div>
+  );
 }
 
 class ProgressBar extends Component {
   constructor(props) {
     super(props);
-    this.state = {progress: 0};
+    this.state = {progress: this.props.progress};
 
     this.handleChange = this.handleChange.bind(this);
   }
@@ -26,5 +41,9 @@ class ProgressBar extends Component {
     );
   }
 }
+
+ProgressBar.defaultProps = {
+  progress: 0
+};
 
 export default App;

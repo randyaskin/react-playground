@@ -1,10 +1,20 @@
-html, body {
-  margin: 30px;
+.header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.headerLogo {
+  height: 60px;
+  width: 60px;
+}
+.title {
+  color: #61DAFB;
 }
 .container {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin: 20px;
 }
 .progress {
   width: 40px;
