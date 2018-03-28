@@ -1,0 +1,28 @@
+html, body {
+  margin: 30px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.progress {
+  width: 40px;
+}
+.background {
+  background-color: gainsboro;
+  overflow-x: hidden;
+  height: 15px;
+  flex: 1 1 auto;
+  margin-left: 10px;
+}
+.fill {
+  background-color: deepskyblue;
+  height: 15px;
+  transition: transform 1s cubic-bezier(.78,.13,.16,.87);
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  overflow: hidden;
+}
