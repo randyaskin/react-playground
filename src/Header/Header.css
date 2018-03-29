@@ -1,0 +1,13 @@
+.header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.header__logo {
+  height: 40px;
+  width: 40px;
+}
+.header__title {
+  color: #61DAFB;
+}
