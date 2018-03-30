@@ -1,16 +1,21 @@
-.contactList {
+.shoppingCart {
   padding: 0;
 }
-.contact {
+.item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 20px;
   line-height: 20px;
 }
-.contact a {
+.item__left {
+  display: flex;
+  align-items: center;
+}
+.item a {
   text-decoration-line: none;
 }
-.contact__avatar {
+.item__image {
   border-radius: 50%;
   margin-right: 20px;
 }
